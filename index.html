@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Pickleball Store</title>
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!--
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm mb-4">
+  <div class="container-fluid">
+    <a class="navbar-brand fw-bold" href="#">📚 Pickleball Store</a>
+    <div>
+      <button class="btn btn-outline-primary btn-sm">Vietnamese</button>
+      <button class="btn btn-success btn-sm">English</button>
+    </div>
+  </div>
+</nav>
+-->
+<div class="container mt-4">
+        <div class="d-flex justify-content-between align-items-center p-3 bg-white rounded shadow-sm">
+            <h4 class="m-0 fw-bold text-dark">
+                🏓Pickleball Store
+            </h4>
+        <div>
+            <button class="btn btn-outline-primary btn-sm">Vietnamese</button>
+            <button class="btn btn-info text-light btn-sm">English</button>
+        </div>
+        </div>
+    </div>
+
+  <div class="container mt-4">
+
+    <div class="d-flex justify-content-between mb-2">
+        <div>
+            <button class="btn btn-sm btn-them me-1" data-bs-toggle="modal" data-bs-target="#addModal">➕Add Product</button>
+        </div>
+
+    <div class="d-flex align-items-center mb-3" style="gap: 0px;">
+            <input type="text" class="form-control form-control-sm" placeholder="Search product..." style="width: 250px;">
+    </div>
+    </div>
+
+    <table class="table table-hover text-center align-middle custom-table">
+      <thead class="table-primary">
+        <tr>
+          <th>ID</th>
+          <th>Product Name</th>
+          <th>Category</th>
+          <th>Price</th>
+          <th>Stock</th>
+          <th>Description</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Pickleball Pro Elite</td>
+          <td>Pickleball Paddle</td>
+          <td>2500000 đ</td>
+          <td>15</td>
+          <td>Professional racquet for tournament players</td>
+          <td>
+            <div class="d-inline-flex gap-1 action-buttons">
+            <button class="btn btn-sm btn-success">Edit</button>
+            <button class="btn btn-sm btn-danger">Delete</button>
+            </div>
+            </td>
+        </tr>
+
+        <tr>
+          <td>2</td>
+          <td>Pickleball Tournament X6</td>
+          <td>Pickleball Ball</td>
+          <td>450000 đ</td>
+          <td>8</td>
+          <td>Set of 6 high quality balls for competition</td>
+          <td class="text-center">
+            <div class="d-inline-flex gap-1 action-buttons">
+            <button class="btn btn-sm btn-success">Edit</button>
+            <button class="btn btn-sm btn-danger">Delete</button>
+            </div>
+            </td>
+        </tr>
+
+        <tr>
+          <td>3</td>
+          <td>Deluxe Racquet Bag</td>
+          <td>Bag</td>
+          <td>850000 đ</td>
+          <td>8</td>
+          <td>Premium racket bag with multiple compartments</td>
+          <td class="text-center">
+            <div class="d-inline-flex gap-1 action-buttons">
+            <button class="btn btn-sm btn-success">Edit</button>
+            <button class="btn btn-sm btn-danger">Delete</button>
+            </div>
+            </td>
+        </tr>
+
+        <tr>
+          <td>4</td>
+          <td>Pickleball Sports Shirt</td>
+          <td>Apparel</td>
+          <td>320000 đ</td>
+          <td>25</td>
+          <td>Cool, sweat-absorbent sports shirt</td>
+          <td class="text-center">
+            <div class="d-inline-flex gap-1 action-buttons">
+            <button class="btn btn-sm btn-success">Edit</button>
+            <button class="btn btn-sm btn-danger">Delete</button>
+            </div>
+            </td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>Giày Pickleball Court Master</td>
+          <td>Shoes</td>
+          <td>1800000 đ</td>
+          <td>0</td>
+          <td>Specialized shoes with anti-slip soles</td>
+          <td class="text-center">
+            <div class="d-inline-flex gap-1 action-buttons">
+            <button class="btn btn-sm btn-success">Edit</button>
+            <button class="btn btn-sm btn-danger">Delete</button>
+            </div>
+            </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+<!--
+  <div class="modal fade" id="addModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog">
+    <form class="modal-content">
+      <div class="modal-body">
+        <div class="mb-3">
+          <label>Product name:</label>
+          <input type="text" class="form-control" required>
+        </div>
+        <div class="mb-3">
+          <label>Category:</label>
+          <select class="form-select" required>
+            <option>Pickleball Paddle</option>
+            <option>Pickleball Ball</option>
+            <option>Bag</option>
+            <option>Apparel</option>
+            <option>Shoes</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label>Price (VND):</label>
+          <input type="number" class="form-control" min="0" required>
+        </div>
+        <div class="mb-3">
+          <label>Stock:</label>
+          <input type="number" class="form-control" min="0" required>
+        </div>
+        <div class="mb-3">
+          <label>Description:</label>
+          <textarea class="form-control" rows="3" required></textarea>
+        </div>
+
+        <div class="d-flex justify-content-end mt-3">
+          <button type="button" class="btn btn-danger me-2" data-bs-dismiss="modal">Cancel</button>
+          <button type="submit" class="btn btn-success">Save</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+-->
+
+<div class="modal fade" id="addModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+      <form class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title fw-bold">Add Product</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <div class="mb-3">
+            <label>Product name:</label>
+            <input type="text" class="form-control" required>
+          </div>
+          <div class="mb-3">
+            <label>Category</label>
+            <select class="form-select">
+          <!-- <select class="form-select form-select-sm w-100"></select>   --> 
+          <option>Pickleball Paddle</option>
+          <option>Pickleball Ball</option>
+          <option>Bag</option>
+          <option>Apparel</option>
+          <option>Shoes</option>
+        </select>
+          </div>
+          <div class="mb-3">
+            <label>Price (VND):</label>
+            <input type="number" class="form-control" required>
+          </div>
+          <div class="mb-3">
+            <label>Stock:</label>
+            <input type="number" class="form-control" required>
+          </div>
+          <div>
+            <label>Description:</label>
+            <textarea class="form-control" rows="2" required></textarea>
+          </div>
+          
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
+          <button type="submit" class="btn btn-success">Save</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
